@@ -1,0 +1,114 @@
+body {
+     background-color: #c3daec;
+}
+  
+
+.button_slide {
+  color: #FFF;
+  border: 2px solid rgb(78, 137, 255);
+  border-radius: 0px;
+  padding: 2px 5px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #004f8f;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  border-radius: 10px;
+ 
+}
+
+.text_boton{
+    color: #FFF;
+    font-size: 15px;
+}
+
+.slide_left:hover {
+  box-shadow: inset 0 0 0 50px rgb(78, 137, 255);
+}
+
+#outer {
+  width: 364px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+
+.cont_date{
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bombillo {
+    width: 125px;
+    height: 125px;
+    background-color: transparent;
+    border-radius: 50px 50px 50px 50px;
+    position: relative;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    transition: box-shadow 0.3s ease;
+}
+
+.bombillo:before {
+    content: "";
+    position: absolute;
+    top: 120px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.bombillo.encendido {
+    box-shadow: 0 0 30px 10px rgba(255, 255, 0, 0.8);
+    background-color: #ffce3d;
+}
+
+.bombillo.apagado {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+}
+
+@keyframes encender {
+    0% {
+        box-shadow: 0 0 10px rgba(249, 55, 55, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 30px 10px rgba(255, 255, 0, 0.8);
+    }
+}
+
+.encender {
+    animation: encender 1s ease-in-out forwards;
+}
+
+.apagado {
+    animation: apagado 1s ease-in-out forwards;
+}
+
+.sub1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
